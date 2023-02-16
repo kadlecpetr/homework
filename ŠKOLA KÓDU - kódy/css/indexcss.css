@@ -1,0 +1,12 @@
+selector {
+    vlastnost: hodnota;
+}
+
+.text {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: line-through;
+    color: gold;
+    text-decoration: underline;
+}
+

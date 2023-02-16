@@ -1,0 +1,209 @@
+<!-- Služební tag pro prohlížeč, který udává, v jakém jazyce je napsán soubor -->
+<!DOCTYPE html>
+<!-- Uvnitř tagu html uvádíme veškerý obsah naší stránky -->
+<html lang="en">
+<!-- Hlavička webu, služební informace pro prohlížeč, klíčová slova, autor, kódování, atd. -->
+<head>
+    <!-- Služební tagy meta umožňují prohlížečům a vyhledávačům správně zobrazovat informaci z webu -->
+    <meta charset="UTF-8">
+    <meta author="Petr Kadlec">
+    <meta keywords="Palivové dřevo, dřevo na topení, krbové dřevo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nadpis, který je vidět v záložce -->
+    <title>PK Stránka</title>
+    <!-- Napojení stylů v css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Napojení JavaScriptu -->
+    <script src="script.js"></script>
+</head>
+<!-- Viditelný obsah webu (body) -->
+<body>
+    
+    <!-- Nadpisy v HTML -->
+    <h1>Nadpis 1</h1>
+    <h2>Nadpis 2</h2>
+    <h3>Nadpis 3</h3>
+    <h4>Nadpis 4</h4>
+    <h5>Nadpis 5</h5>
+    <h6>Nadpis 6</h6>
+
+    <!-- Odstavec, odřádkování, tučnost, duležitost, kurzíva, podtržení, zaškrtnutí, indexy -->
+    <p>Dolor sit amet consectetur adipisicing elit. <br> Recusandae adipisci quia quae eos fuga.</p>
+    <p> <b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit. Ipsum, adipisci?</p>
+    <p> <strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Labore molestiae quae doloremque asperiores quisquam sequi.</p>
+    <p> <i>Lorem ipsum</i> dolor sit, amet <em>consectetur adipisicing elit.</em> Eum, optio?</p>
+    <p> <u>Lorem ipsum</u> dolor sit amet, <s>consectetur</s> adipisicing elit. Sint, laborum!</p>
+
+    <p>H<sub>2</sub>0</p>
+    <p>100 km<sup>2</sup></p>
+
+    <!-- Seznamy -->
+    <ul>
+        <li>Pes
+            <ul>
+                <li>čivava</li>
+                <li>ovčák</li>
+                <li>ratlík</li>
+            </ul>
+        </li>
+        <li>Kočka</li>
+        <li>Morče</li>
+    </ul>
+
+    <ol start="4" type="1">
+        <li>Koupit rohlík
+            <ol>
+                <li>tukový</li>
+                <li>celozrný</li>
+                <li>žitný</li>
+            </ol>
+        </li>
+        <li>Uvařit kaši</li>
+        <li>Vyvenčit psa</li>
+    </ol>
+
+    <!-- Odkazy vnějsí -->
+    <!-- odkaz na html soubory -->
+    <a href="news.html">Novinky</a>
+
+    <!-- odkaz na externí weby -->
+    <a href="http://google.com">Google</a>
+
+
+    <!-- Odkazy vnitřní / přesměrování podle odkazu na stránce -->
+    <br><br>
+    <a href="#port">Portflio</a>
+
+    <h1 id="port">Portfolio</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae natus totam soluta cupiditate enim aut perspiciatis odit recusandae. Sint facilis eligendi perferendis hic, deserunt aut accusamus? Non, ullam consequuntur iste expedita omnis eaque laborum at quod accusamus quia velit sint qui error neque assumenda reprehenderit ab dolores excepturi deserunt quis perspiciatis commodi minus magnam. Obcaecati temporibus sit expedita, quasi deserunt voluptate minima ullam tenetur sed id soluta. Debitis dolorum repellendus eveniet? Rerum et magnam ducimus totam. Ut explicabo tempora, dolores corrupti suscipit eligendi dolorum facilis hic illum quidem, fugiat harum quae magnam tenetur vero ad quasi. Labore quibusdam eligendi inventore!</p>
+
+    <!-- Odkaz na telefon -->
+    <a href="tel:+420777777777">+420 777 777 777 / Zavolejte nám</a>
+
+    <!-- Odkaz na email -->
+    <a href="mailto:petr@kadlec.com">petr@kadlec.com / Napište nám</a>
+
+    <!-- Odkaz na skype -->
+    <a href="skype:petr1914">Volejte mi na Skype</a>
+
+    <!-- Targety v odkazech / aby se externí weby otevíraly v nové záložce -->
+    <br> <br>
+    <a target="_blank" href="https://google.com">Google</a>
+
+
+    <!-- Obrázky -->
+    <!-- Vnitřní odkazování na obrázek -->
+    <img src="img/Image_created_with_a_mobile_phone.png.webp" alt="Telefon a most">
+
+    <!-- Vnější odkazování na obrázek / vložení odkazové adresy -->
+    <img src="https://imgv3.fotor.com/images/blog-cover-image/part-blurry-image.jpg" alt="">
+
+    <!-- Obrázek jako odkaz -->
+    <a href="http://google.com">
+        <img src="img/Image_created_with_a_mobile_phone.png.webp" alt="Telefon s mostem">
+    </a>
+    
+
+    <!-- Tabulky -->
+    <table>
+        <!-- Nadpisy tabulky -->
+        <caption>Naše tabulka</caption>
+        <!-- Nový řádek tabulky tr(table row) -->
+        <tr>
+            <!-- Nadpisy v tabulce th(table header) -->
+            <th>Nadpis 1</th>
+            <th>Nadpis 2</th>
+        </tr>
+
+        <tr>
+            <!-- Buňka tabulky -->
+            <td>Buňka 1</td>
+            <td>Buňka 2</td>
+        </tr>
+    </table>
+
+
+    <!-- ATRIBUTY -->
+    <!-- class, id -->
+    <p id="firstText" class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <!-- měnitelný text -->
+    <p contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <!-- data-něco pro JS -->
+    <p data-time="0.2s">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- skrytí pro JS -->
+    <p hidden>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <!-- určení jazyku věty -->
+    <p lang="cs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- po najetí myši se zobrazí text v title -->
+    <p title="něco v titlu">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+
+    <!-- STRUKTURNÍ TAGY -->
+    <!-- hlavička -->
+    <header></header>
+    <!-- navigace / navbar -->
+    <nav></nav>
+    <!-- sekce -->
+    <section></section>
+    <!-- článek -->
+    <article></article>
+    <!-- unikátní obsah stránky -->
+    <main></main>
+    <!-- patička -->
+    <footer></footer>
+    <!-- adresa článku, dokumentu, webu -->
+    <address></address>
+
+
+    <!-- FORMULÁŘE -->
+    <form action="#">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter name" required autofocus name="user-name" value="Any Name">
+        <input type="tel" placeholder="+420 777 777 777">
+        <input type="email" placeholder="petr@kadlec.com">
+    
+        <input type="submit" value="Odeslat">
+
+        <label for="#">Your favourite food</label>
+
+        <label for="pizza">Pizza</label>
+        <input id="pizza" type="checkbox" name="pizza">
+
+        <label for="brambory">Brambory</label>
+        <input id="brambory" type="checkbox" name="pizza">
+
+        <label for="krevety">Krevety</label>
+        <input id="krevety" type="checkbox" name="pizza">
+        
+        <label for="date">Datum narození</label>
+        <input id="date" type="date">
+        
+        <input type="password">
+        
+        <input type="reset" value="Vymazat údaje">
+        
+        <input type="range">
+        
+        <input type="file" multiple>
+
+        <label for="textArea">Vyplňte text</label> <br>
+        <textarea name="form-text" id="" cols="30" rows="10"></textarea>
+
+        <select>
+            <option value="Praha">Praha</option>
+            <option value="Brno" selected>Brno</option>
+            <option value="Ostrava" disabled>Ostrava</option>
+        </select>
+
+        <button type="submit">Poslat</button>
+
+
+    </form>
+
+
+    
+
+
+</body>
+</html>

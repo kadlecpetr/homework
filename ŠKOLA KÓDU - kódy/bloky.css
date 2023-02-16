@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    /* šířka */
+    width: 300px;
+    /* výška */
+    height: 300px;
+    /* pozadí */
+    background-color: red;
+    /***** vnitřní odstupy - padding *****/
+    /* horní dolní - pravý levý */
+    padding: 10px 20px;
+    /* horní pravý dolní levý */
+    padding: 10px 20px 50px 10px;
+
+    /* rámeček */
+    border: 5px solid blue;
+    
+    /***** vnější odstupy - margin *****/
+    margin: 20px 50px 10px 30px;
+}
+
+.link {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 20px 20px;
+}
